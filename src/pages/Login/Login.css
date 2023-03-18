@@ -1,0 +1,75 @@
+.login-header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    border-bottom: 2px solid #2DC7AA;
+}
+
+.logo{
+    width: 50px;
+}
+
+.reg-btn{
+    padding: 8px;
+    background-color: #2DC7AA;
+    border: none;
+    border-radius: 5px;
+}
+.login-link{
+    text-decoration: none;
+    color: white;
+
+}
+.login-links{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+   height: 90vh;
+   align-items: center;
+    /* border: 2px solid black; */
+
+}
+.form-container{
+    background-color:  #e9e9e9;
+    width: 300px;
+    height: 300px;
+    padding-top: 5%;
+    border-radius: 10px;
+
+}
+
+.login-form{
+    text-align: center;
+}
+
+.form-container > h5{
+    margin-bottom: 10px;
+}
+
+.inputs{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.login-btn{
+    background-color: #2DC7AA;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 550px) {
+    .btn-contain{
+        padding-top: 5px;
+    }
+}

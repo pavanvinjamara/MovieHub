@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,500&display=swap');
+
+
+.header{
+   padding: 15px 40px;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 5;
+    font-size: 18px;
+    font-family: 'Poppins';
+    background-color: white;
+   
+}
+
+.navlogo{
+    height: 38px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+
+ul{
+    display: flex;
+}
+
+ul > li{
+    list-style: none;
+    margin-left: 37px;
+    margin-top: 7px;
+    text-align: center;
+   
+    
+}
+ul > li:hover{
+    color: rgb(231, 48, 7);
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+ }
+
+.menu-icon,.hamlogo, .close-icon{
+    display: none;
+}
+@media screen and (max-width: 1050px) {
+    *,body, .header, nav, ul, li{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        padding: 38px 25px;
+    }
+}
+@media screen and (max-width: 625px) {
+    *,body, .header, nav, ul, li{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+       padding: 15px 20px;
+       font-size: 15px;
+    }
+}
+    
+
+@media screen and (max-width: 550px) {
+    *,body, .header, nav, ul, li{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        padding: 33px 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+   
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 58px;
+        position: absolute;
+        width: 91%;
+    }
+    .navlogo{
+        height: 35px;
+    }
+    .navbar{
+        display: none;
+    }
+    ul{
+        /* transition: 2s ease-in-out; */
+      
+      
+        background-color: #2DC7AA;
+        justify-content: flex-end;
+        flex-direction: column;
+        color: white;
+        /* margin-right: 25px; */
+        /* font-size: 10px; */
+    }
+    .list1{
+        border-radius: 10px;
+        padding-top: 44px;
+       
+        
+        
+    }
+
+    
+   
+    li{
+        margin-right: 55px;
+        margin-bottom: 38px;
+        font-weight: 700;
+        /* text-decoration: none; */
+    }
+        
+
+   
+    .hamlogo, .close-icon{
+        display: block;
+        position: absolute;
+        right: 22px;
+        color: var(--Grayish-Violet);
+
+    }
+    
+}
