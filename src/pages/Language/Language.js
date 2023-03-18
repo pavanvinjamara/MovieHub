@@ -6,7 +6,7 @@ function Language() {
   return (
     <div className='language-page'>
         <Navbar/>
-        <hr></hr>
+        <hr class="liner"></hr>
         <LanguageSort/>
     </div>
   )

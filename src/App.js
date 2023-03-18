@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from './pages/Register/Register';
 import Language from './pages/Language/Language';
 import Genre from './pages/Genre/Genre';
+import PlayerPage from './pages/Player/Player';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,6 +27,7 @@ function App() {
        <Route path="/register" element={<Register/>}/>
        <Route path="/language" element={<Language/>}/>
        <Route path="/genre" element={<Genre/>}/>
+       <Route path="/player" element={<PlayerPage/>}/>
       </Routes>
      </BrowserRouter>
     </div>

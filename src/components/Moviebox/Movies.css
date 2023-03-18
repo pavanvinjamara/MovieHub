@@ -24,6 +24,12 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    
+}
+
+.info-btn-container > button:hover{
+    background-color: #a9e9dd;
+    color: black;
 }
 
 .info-btn{

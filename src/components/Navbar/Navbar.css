@@ -17,6 +17,7 @@
 
 .navlogo{
     height: 38px;
+    animation: rotateIn 2s  forwards;
 }
 
 nav{
