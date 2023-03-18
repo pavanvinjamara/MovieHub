@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
-
+import './Player.css'
 import ReactPlayer from 'react-player';
 import VideoPath from '../../assets/uchiha.mp4'
+import Navbar from '../../components/Navbar/Navbar';
 
 const PlayerPage = () => {
  
@@ -11,14 +12,18 @@ const PlayerPage = () => {
 
   return (
     <div>
+        <Navbar/>
+        <hr className='liner'></hr>
+        <div className='moviects'>
       <ReactPlayer
         url={VideoPath}
         ref={playerRef}
         playing={true}
         controls={true}
-        width="100%"
-        height="100%"
+        className="movie-contain"
+
       />
+      </div>
     </div>
   );
 };

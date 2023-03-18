@@ -7,7 +7,7 @@ function Genre() {
   return (
     <div className='genre- container'>
         <Navbar/>
-        <hr class="liner"></hr>
+        <hr className="liner"></hr>
         <GenreSort/>
     </div>
   )
