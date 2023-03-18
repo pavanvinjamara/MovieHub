@@ -6,6 +6,8 @@ import MainPage from './pages/MainPage/MainPage';
 import MovieDetails from './components/Moviedetails/Moviedetails';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from './pages/Register/Register';
+import Language from './pages/Language/Language';
+import Genre from './pages/Genre/Genre';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -22,6 +24,8 @@ function App() {
 
        <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn}/>}/>
        <Route path="/register" element={<Register/>}/>
+       <Route path="/language" element={<Language/>}/>
+       <Route path="/genre" element={<Genre/>}/>
       </Routes>
      </BrowserRouter>
     </div>

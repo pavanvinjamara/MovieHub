@@ -27,10 +27,14 @@ function Navbar({isLoggedIn}) {
               </Link>
             </li>
             <li>
+            <Link to="/language"  className='links'>
               Language
+              </Link>
             </li>
             <li>
-              genere
+            <Link to="/genre"  className='links'>
+              genre
+              </Link>
             </li>
       
           

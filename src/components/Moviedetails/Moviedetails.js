@@ -8,6 +8,7 @@ function MovieDetails() {
   if (!selectedMovie) {
     return <div>Loading...</div>;
   }
+   
  
   return (
     <div>
@@ -18,7 +19,7 @@ function MovieDetails() {
       <img src={`https://image.tmdb.org/t/p/w500${selectedMovie.poster_path}`} alt={selectedMovie.title} className="post-img"/>
       <div className='info-movie'>
       <h1>{selectedMovie.title}</h1>
-      <p>Action,Adventure,Comdey</p>
+      <p>Action</p>
       <p><strong>Duration :-</strong> 2:30 hr</p>
 <div>
       <button className='watch-now' >Watch Now</button> 
