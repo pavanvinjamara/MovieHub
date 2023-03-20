@@ -27,8 +27,10 @@ function MovieDetails() {
     };
 
     const fetchSimilarMovies = async () => {
+      if(similarMovies){
       const response = await axios.get(`https://api.themoviedb.org/3/movie/${selectedMovie.id}/similar?api_key=cd1ed03cb5a2d66393b34073c9904d3e`);
       setSimilarMovies(response.data.results);
+      }
     };
 
     fetchGenreNames();
@@ -63,7 +65,7 @@ function MovieDetails() {
           <p><strong>Duration :-</strong> 2:30 hr</p>
           <div>
             <button className='watch-now' onClick={handlePlayVideo} >Watch Now</button> 
-            <button className='watch-later'>Watch Later</button>
+            <Link to="/player"><button className='watch-later'>Watch Tralier</button></Link>
           </div>
         </div>
       </div>
